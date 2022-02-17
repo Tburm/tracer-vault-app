@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply text-sm md:text-base lg:text-lg;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+#title {
+  font-family: 'Arial';
+}
+
+ul {
+  list-style-position: inside;
+}
+
+#app {
+  height: 100vh;
+  width: 100vw;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  @apply bg-bg;
+}
+
+.sniper {
+  /* box-shadow: 0px 0px 15px 1px #ddd; */
+}
+
+.connect-btn {
+  @apply rounded-lg border-2 border-black my-1 px-6 py-1 focus:ring-0 font-black cursor-pointer;
+}
+
+.connect-btn {
+  @apply bg-btn-primary;
+} .connect-btn:hover {
+  @apply bg-btn-secondary border-black;
+} .connect-btn:disabled {
+  @apply bg-btn-secondary text-gray-400 border-black cursor-default;
+}
+
+.switch-btn {
+  @apply rounded-lg border-2 border-black my-1 px-6 py-1 focus:ring-0 font-black cursor-pointer;
+}
+
+.switch-btn {
+  @apply bg-btn-primary;
+} .switch-btn:hover {
+  @apply bg-btn-secondary border-black;
+}
+
+.disconnect-btn {
+  @apply rounded-lg border-2 border-black my-1 px-6 py-1 focus:ring-0 text-red-500 text-sm underline cursor-pointer;
+}
+
+.disconnect-btn {
+  @apply bg-btn-primary;
+} .disconnect-btn:hover {
+  @apply bg-btn-secondary text-black border-black;
+}
+
+.card {
+  @apply border-2 border-black mx-4 mb-4 px-4 py-4 max-w-3xl rounded-lg shadow-md text-center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* unselectable text */
+.unselectable {
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in Internet Explorer 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
