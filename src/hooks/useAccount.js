@@ -6,7 +6,8 @@ function useAccount(props) {
 
     useEffect(() => {
         async function getBalance() {
-            let newBalance = await props.library.getBalance(props.account)
+            var newBalance = await props.library.getBalance(props.account)
+            newBalance = ethers.utils.formatEther(newBalance)
             setAccountBalance(newBalance)
         }
 

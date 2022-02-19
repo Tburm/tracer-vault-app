@@ -1,11 +1,11 @@
 {
   "name": "tracer-vault-app",
-  "homepage": ".",
+  "homepage": "http://.",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@babel/preset-env": "^7.16.8",
-    "@craco/craco": "^6.4.0",
+    "@craco/craco": "^6.4.3",
     "@tailwindcss/forms": "^0.3.4",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -56,5 +56,16 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.16.7"
+  },
+  "description": "The frontend for vaults farming skew on Tracer Finance",
+  "main": "craco.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tburm/tracer-vault-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tburm/tracer-vault-app/issues"
   }
 }

@@ -7,6 +7,8 @@ import { useSpring, animated } from "react-spring";
 
 // hooks
 import { useAccount } from '../hooks/useAccount'
+import StakingInterface from '../components/StakingInterface';
+import WithdrawalInterface from '../components/WithdrawaInterface';
 
 function Landing(props) {
   const [accountBalance] = useAccount(props);
@@ -20,8 +22,9 @@ function Landing(props) {
         <>
         <animated.div style={styles} className="flex flex-row items-center justify-center">
           <div className="px-6 md:px-12 lg:px-24 flex flex-col items-center justify-center">
-            {accountBalance}
           </div>
+          <StakingInterface/>
+          <WithdrawalInterface/>
         </animated.div>
         </>
       )

@@ -17,6 +17,7 @@ import './App.css';
 import Navbar from './components/Navbar'
 import NotLoaded from './components/NotLoaded'
 
+
 // pages
 import { Landing } from './pages'
 
