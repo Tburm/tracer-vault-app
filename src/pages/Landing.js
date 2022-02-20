@@ -10,6 +10,9 @@ import { useAccount } from '../hooks/useAccount'
 import StakingInterface from '../components/StakingInterface';
 import WithdrawalInterface from '../components/WithdrawaInterface';
 
+// constant
+const SLIDE_LINK = "https://docs.google.com/presentation/d/e/2PACX-1vRb_awnDPSYAswfO60MXBCfIYvWISz6Xc-fEo2qHyVbNwOS1as-mybPUfE17iNaZppz2Bg2erHeYxCE/pub?start=false&loop=true&delayms=30000"
+
 function Landing(props) {
   const [accountBalance] = useAccount(props);
 
@@ -20,17 +23,14 @@ function Landing(props) {
     if(loaded) {
       return (
         <>
-        <animated.div style={styles} className="flex flex-row items-center justify-center">
-          <div className="px-6 md:px-12 lg:px-24 flex flex-col items-center justify-center">
-          </div>
+        <animated.div style={styles} className="flex flex-col items-center justify-center">
           <StakingInterface tokenBalance={0} />
+          <WithdrawalInterface tokenBalance={0} />
+          <div className="mt-2">
+              <a className="text-xl" target="_blank" rel="noreferrer" href={SLIDE_LINK}>Link to Slides</a>
+          </div>
         </animated.div>
         </>
-      )
-    } 
-    else if (!loaded) {
-      return (
-        <WithdrawalInterface/>
       )
     } else {
       return (
