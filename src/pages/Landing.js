@@ -23,10 +23,14 @@ function Landing(props) {
         <animated.div style={styles} className="flex flex-row items-center justify-center">
           <div className="px-6 md:px-12 lg:px-24 flex flex-col items-center justify-center">
           </div>
-          <StakingInterface/>
-          <WithdrawalInterface/>
+          <StakingInterface tokenBalance={0} />
         </animated.div>
         </>
+      )
+    } 
+    else if (!loaded) {
+      return (
+        <WithdrawalInterface/>
       )
     } else {
       return (

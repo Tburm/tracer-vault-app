@@ -44,10 +44,11 @@ function StakingInterface(props) {
                 Balance: {parseFloat(0.00).toFixed(2)}
               </p>
               <div className="flex flex-row items-center">
-                <Form.Control placeholder="0.0" value={depositAmount} disabled={false} onChange={handleDepositAmountChange} />
-                <p className="text-sm -ml-8 hover:underline cursor-pointer unselectable" onClick={handleDepositMax} >Max</p>
+                <Form.Control placeholder="0.0" value={depositAmount} type="number" disabled={false} onChange={handleDepositAmountChange} />
+                <button type="button" className="connect-btn text-center my-2 w-half" onClick={handleDepositMax}>Max</button>
               </div>
             </div>
+            
             <button type="button" className="connect-btn text-center my-2 w-full">Deposit</button>
           </Form>
         </div>

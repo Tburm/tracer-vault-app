@@ -45,7 +45,7 @@ function WithdrawalInterface(props) {
               </p>
               <div className="flex flex-row items-center">
                 <Form.Control placeholder="0.0" value={withdrawalAmount} disabled={false} onChange={handleWithdrawalAmountChange} />
-                <p className="text-sm -ml-8 hover:underline cursor-pointer unselectable" onClick={handleWithdrawalMax} >Max</p>
+                <button type="button" className="connect-btn text-center my-2 w-half" onClick={handleWithdrawalMax}>Max</button>
               </div>
             </div>
             <button type="button" className="connect-btn text-center my-2 w-full">Withdraw</button>
