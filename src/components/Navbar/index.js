@@ -14,7 +14,7 @@ function Navbar({
   return (
     <div className="mt-2 mb-4 px-4 flex flex-row items-center justify-between">
       <div className="flex flex-col items-center">
-        <img className="h-12" src='./images/logo.png' alt="logo" />
+        <img className="h-12" src='./images/skew_you.png' alt="logo" />
       </div>
 
       <div>
