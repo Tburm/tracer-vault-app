@@ -27,7 +27,7 @@ function Landing(props) {
           <StakingInterface tokenBalance={0} />
           <WithdrawalInterface tokenBalance={0} />
           <div className="mt-2">
-              <a className="text-xl" target="_blank" rel="noreferrer" href={SLIDE_LINK}>Link to Slides</a>
+              <a className="text-xl" target="_blank" rel="noreferrer" href={SLIDE_LINK}>Strategy Overview</a>
           </div>
         </animated.div>
         </>
